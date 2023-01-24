@@ -2,27 +2,27 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css"
 
-// Components
-import Footer from "./components/Footer";
-import Menu from "./components/Menu";
-import MangaCard from "./components/MangaCard";
-import TrendingSlideShow from "./components/TrendingSlideShow"
-import GenreButton from "./components/Genre_Button"
-
-// Data
-import mangaData from "./assets/MangaInfo.json";
-import genres from "./assets/Genres.json";
-
-// Pages
-import Chapter from "./Chapter";
-import Bookdesc from "./Bookdesc";
-import Trending from "./Trending";
+// // Components
+// import Footer from "./components/Footer";
+// import Menu from "./components/Menu";
+// import MangaCard from "./components/MangaCard";
+// import TrendingSlideShow from "./components/TrendingSlideShow"
+// import GenreButton from "./components/Genre_Button"
+//
+// // Data
+// import mangaData from "./assets/MangaInfo.json";
+// import genres from "./assets/Genres.json";
+//
+// // Pages
+// import Chapter from "./Chapter";
+// import Bookdesc from "./Bookdesc";
+// import Trending from "./Trending";
 
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
-mangaData.forEach((item) => {
-    item.image = process.env.PUBLIC_URL + "/" + item.image;
-});
+// mangaData.forEach((item) => {
+//     item.image = process.env.PUBLIC_URL + "/" + item.image;
+// });
 /* ############################################################## */
 
 export default function Appp() {
@@ -31,9 +31,9 @@ export default function Appp() {
         <Routes>
             <Route index element={<App />} />
             <Route path="App" element={<App />} />
-            <Route path="chapter" element={<Chapter />} />
-            <Route path="Bookdesc" element={<Bookdesc/>} />
-            <Route path="Trending" element={<Trending/>} />
+            {/*<Route path="chapter" element={<Chapter />} />*/}
+            {/*<Route path="Bookdesc" element={<Bookdesc/>} />*/}
+            {/*<Route path="Trending" element={<Trending/>} />*/}
         </Routes>
       </BrowserRouter>
     );
@@ -42,7 +42,7 @@ export default function Appp() {
 function App() {
     return (
         <div className="App">
-            <Menu />
+            {/*<Menu />*/}
 
             <div className="body">
                 <div className="Top_Chapters_Box">
@@ -51,7 +51,7 @@ function App() {
                     </div>
                 </div>
 
-                <TrendingSlideShow />
+                {/*<TrendingSlideShow />*/}
 
                 <div className="Search">
                     <div className="positioning_search">
@@ -122,6 +122,6 @@ function filterDropDown() {
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const foot = ReactDOM.createRoot(document.getElementById("footer"))
+// const foot = ReactDOM.createRoot(document.getElementById("footer"))
 root.render(<Appp /> );
-foot.render(<Footer />);
+// foot.render(<Footer />);
