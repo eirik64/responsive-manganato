@@ -73,9 +73,9 @@ function App() {
 
                     {/*<div id={'filter_options'}>*/}
                         <div className={'filters'} style={{display:'none', flexDirection:'row', flexWrap:'wrap'}}>
-                            {genres.map((item, _) => (
-                                <GenreButton genre={item.genre} />
-                            ))}
+                            {/*{genres.map((item, _) => (*/}
+                            {/*    <GenreButton genre={item.genre} />*/}
+                            {/*))}*/}
                         </div>
                     {/*</div>*/}
                 </div>
@@ -87,13 +87,13 @@ function App() {
                     </div>
 
                     <div id={"Recently_Updated_Manga"} style={{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent:'space-between'}}>
-                        {mangaData.map((item, index) => (
-                            <div style={{paddingRight: "2vw", paddingBottom: "3vh"}}>
-                                <MangaCard title={item.title} alt={item.alt} chapters={item.chapters}
-                                           image={item.image} author={item.author} genres={item.genres} index={index}/>
-                            </div>
+                        {/*{mangaData.map((item, index) => (*/}
+                        {/*    <div style={{paddingRight: "2vw", paddingBottom: "3vh"}}>*/}
+                        {/*        <MangaCard title={item.title} alt={item.alt} chapters={item.chapters}*/}
+                        {/*                   image={item.image} author={item.author} genres={item.genres} index={index}/>*/}
+                        {/*    </div>*/}
 
-                        ))}
+                        {/*))}*/}
                     </div>
 
                     <div style={{display:'flex', justifyContent:'center'}}>
